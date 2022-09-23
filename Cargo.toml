@@ -1,0 +1,16 @@
+[package]
+name = "rquickjs"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "repro"
+path = "src/repro.rs"
+
+[[bin]]
+name = "workaround"
+path = "src/workaround.rs"
+
+[dependencies]
+rquickjs = { version = "0.1.7", features = [ "loader", "macro", "dump-module-resolve" ]}
+
