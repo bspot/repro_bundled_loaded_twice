@@ -1,6 +1,6 @@
 # repro_bundled_loaded_twice
 
-Reproduction for an issue in the https://github.com/DelSkayn/rquickjs Rust wrapper for QuickJS.
+Reproduction for [Issue #89](https://github.com/DelSkayn/rquickjs/issues/89) in the https://github.com/DelSkayn/rquickjs Rust wrapper for QuickJS.
 
 Under some circumstances, compiled modules stored in a `Bundle` will be re-loaded every time they are imported instead of just once. 
 This can happen particularly easy when using the `embed` macro to create the bundle. 
